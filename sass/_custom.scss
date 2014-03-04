@@ -1,1 +1,22 @@
 // Your custom SCSS should be written here...
+
+.navbar {
+	.logo {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+.modal {
+	p {
+		color: #444444;
+	}
+	.icon-cancel {
+		color: #444444;
+		font-size: 1.5rem;
+	}
+	.field {
+		color: #444444;
+	}
+}

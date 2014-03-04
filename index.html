@@ -43,25 +43,108 @@
 
 <body>
 
-<div class="metro navbar" id="nav1" gumby-fixed="top">
+<div class="navbar" id="nav1" gumby-fixed="top">
     <div class="row">
-      <h1 class="four columns logo">
+      <h1 class="pull_two four columns logo">
         <a href="index.html">
           <img src="img/toei-channel-logo.png" alt="Toei Channel 東映チャンネル " />
         </a>
       </h1>
       <a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><i class="icon-menu"></i></a>
-      <ul class="four columns">
+      <ul class="push_two four columns">
         <li><a href="shows.html">Shows</a></li>
         <li><a href="movies.html">Movies</a></li>
         <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="#">Search</a></li>
-        <li>&emsp;&emsp;&emsp;&emsp;</li>
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="#" class="switch" gumby-trigger="#search">Search</a></li>
+        <li>&emsp;&emsp;&emsp;</li>
+        <li><a href="#" class="switch" gumby-trigger="#signin">Sign In</a></li>
+        <li><a href="#"  class="switch" gumby-trigger="#signup">Sign Up</a></li>
       </ul>
     </div>
   </div>
+
+<!-- Sign In Modal -->
+<div class="modal" id="signin">
+  <div class="content">
+    <a class="close switch" gumby-trigger="|#signin"><i class="icon-cancel" /></i></a>
+    <div class="row">
+      <div class="ten columns centered text-center">
+        <h2>Sign In</h2>
+        <p>Sign in below to get access to hundreds of shows, movies, and series with personalized recommendations.</p>
+        <hr>
+         <p>
+         <div class="field">
+              Email Address: <br>
+          <input class="wide email input" name="email" type="email" placeholder="Your Email Address" /><br><br>
+              Password: <br>
+          <input class="wide password input" name="password" type="password" placeholder="Password" /><br><br>
+          <div class="medium primary btn"><a href="custom-home.html">Sign In</a></div>
+        </div></p>
+        <br>
+        <p><a href="custom-home.html"><img src="img/fb-signin.png"></a> <a href="custom-home.html"><img src="img/twitter-signin.png"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal" id="signup">
+  <div class="content">
+    <a class="close switch" gumby-trigger="|#signup"><i class="icon-cancel" /></i></a>
+    <div class="row">
+      <div class="ten columns centered text-center">
+        <h2>Sign Up</h2>
+        <p>Create an account for access to hundreds of shows, movies, and series with personalized recommendations.</p>
+        <hr>
+         <p>
+         <div class="field">
+         Full Name: <br>
+          <input class="wide input" name="name" type="text" placeholder="Your Full Name" /><br><br>
+              Email Address: <br>
+          <input class="wide email input" name="email" type="email" placeholder="Your Email Address" /><br><br>
+              Password: <br>
+          <input class="wide password input" name="password" type="password" placeholder="Password" /><br><br>
+          Confirm Password: <br>
+          <input class="wide password input" name="password" type="password" placeholder="Reenter Password" /><br><br>
+          <div class="medium primary btn"><a href="custom-home.html">Sign Up</a></div>
+        </div></p>
+        <br>
+        <p><a href="custom-home.html"><img src="img/fb-signin.png"></a> <a href="custom-home.html"><img src="img/twitter-signin.png"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search Modal -->
+<div class="modal" id="search">
+  <div class="content">
+    <a class="close switch" gumby-trigger="|#search"><i class="icon-cancel" /></i></a>
+    <div class="row">
+      <div class="ten columns centered text-center">
+        <h2>Sign Up</h2>
+        <p>Create an account for access to hundreds of shows, movies, and series with personalized recommendations.</p>
+        <hr>
+         <p>
+         <div class="field">
+         Full Name: <br>
+          <input class="wide input" name="name" type="text" placeholder="Your Full Name" /><br><br>
+              Email Address: <br>
+          <input class="wide email input" name="email" type="email" placeholder="Your Email Address" /><br><br>
+              Password: <br>
+          <input class="wide password input" name="password" type="password" placeholder="Password" /><br><br>
+          Confirm Password: <br>
+          <input class="wide password input" name="password" type="password" placeholder="Reenter Password" /><br><br>
+          <div class="medium primary btn"><a href="custom-home.html">Sign Up</a></div>
+        </div></p>
+        <br>
+        <p><a href="custom-home.html"><img src="img/fb-signin.png"></a> <a href="custom-home.html"><img src="img/twitter-signin.png"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
