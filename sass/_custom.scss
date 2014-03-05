@@ -1,6 +1,9 @@
 // Your custom SCSS should be written here...
 
+$tc-red: #d52f23;
+
 .navbar {
+	margin: 0 0 50px;
 	.logo {
 		height: 100%;
 		width: 100%;
@@ -18,5 +21,40 @@
 	}
 	.field {
 		color: #444444;
+	}
+	h2 {
+		color: #444444 !important;
+	}
+	h3 {
+		font-size: 1.2em;
+		color: #444444 !important;
+	}
+	a {
+		color: #444444 !important;
+		&:hover {
+			text-decoration: underline;
+			color: #d52f23;
+		}
+	}
+	.btn a {
+		color: white !important;
+	}
+	ul {
+		display: inline-block;
+	}
+}
+
+footer {
+	background:#3d433f;
+	font-size: 0.9em;
+	margin: 50px 0 0;
+	p {
+		font-size: 0.9em;
+	}
+	ul,  li {
+		display: inline-block;
+	}
+	li {
+		padding: 20px 10px 0px 0;
 	}
 }
