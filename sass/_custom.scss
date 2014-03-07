@@ -59,6 +59,15 @@ footer {
 	}
 }
 
+#now {
+	background:#3d433f;
+	padding: 10px 20px 20px;
+}
+
+ul li img {
+	border: 3px solid #6a706c;
+}
+
 .tooltiptext{
     display: none;
 }
@@ -295,3 +304,9 @@ footer {
 	.qtip-blue .qtip-close .qtip-icon{
 		background-position: -2px 0;
 	}
+
+.icon-right-open {
+	a {
+		color: white !important;
+	}
+}

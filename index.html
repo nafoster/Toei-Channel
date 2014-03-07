@@ -140,16 +140,24 @@
   </div>
 </div>
 
+<!-- actual dashboard -->
 <div class="row">
   <div class="twelve columns">
-    <h2>On Now</h2>
-    <article class="youtube video">
-      <iframe width="853" height="480" src="http://www.youtube.com/embed/ryIjY13HFfE?rel=0" frameborder="0" allowfullscreen></iframe>    
-    </article>
-    <br><br>
-    <h2>Popular</h2>
-      <ul class="four_up tiles">
-        <li class="tooltip"><a href="#"><img src="img/ksg.jpg"></a></li>
+  	<section id="now">
+	    <h2>On Now <a href="schedule.html"><i class="icon-right-open"></i></a></h2>
+	    <article class="youtube video">
+	      <iframe width="853" height="480" src="http://www.youtube.com/embed/ryIjY13HFfE?rel=0" frameborder="0" allowfullscreen></iframe>    
+	    </article><br>
+	    <h4>Kaizoku Sentai Gokaiger</h4>
+	    <h5>Episode 2: The Worth of This Planet</h5>
+	    <p>The Gokaigers receive a clue to the greatest treasure in that they should search for someone wearing black clothing. When they come across a student in a black school uniform, however, the boy steals one of Captain Marvelous' Ranger Keys.</p>
+	    <div class="medium primary btn"><a href="#">Watch Later</a></div>
+    </section>
+
+    <br><br><br>
+    <h2>Popular Shows <a href="shows.html"><i class="icon-right-open"></i></a></h2>
+      <ul class="three_up tiles">
+        <li class="tooltip"><a href="gokaiger.html"><img src="img/ksg.jpg"></a></li>
           <div class="tooltiptext">
             <h5>Kaizoku Sentai Gokaiger</h5>
               <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span><br>
@@ -159,13 +167,55 @@
         <li><a href="#"><img src="img/sss.jpg"></a></li>
         <li><a href="#"><img src="img/krw.jpg"></a></li>
         <li><a href="#"><img src="img/gytm.jpg"></a></li> 
+        <li><a href="#"><img src="img/gms.jpg"></a></li> 
+        <li><a href="#"><img src="img/ug.jpg"></a></li> 
       </ul>
-    <h2>New</h2>
+      <br>
+    <h2>New Movies <a href="movies.html"><i class="icon-right-open"></i></a></h2>
       <ul class="four_up tiles">
-        <li><a href="#"><img src="img/ohc.jpg"></a></li>
+        <li class="tooltip"><a href="garo.html"><img src="img/gsnm.jpg"></a></li>
+        <div class="tooltiptext">
+            <h5>Garo and the Wailing Dragon</h5>
+              <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span><br>
+            Kouga must now go to the Promise Land to get back the seventh fang of Gajari, the ultimate source of power, found inside the body of an evil dragon. But when he got there, his three sacred treasures (Zaruba ring, white clerical garment and the sword of Garo) were missing, thus he cannot become Garo. Kouga must first retrieve his treasures to challenge the evil dragon to a final battle!<br><br>
+            <strong>Starring:</strong>  Ryosei Konishi, Anna Aoi, Rei Fujita, Yûki Kubota<br>
+          </div>
         <li><a href="#"><img src="img/hero.jpg"></a></li>
         <li><a href="#"><img src="img/kyoryuger.jpg"></a></li>
         <li><a href="#"><img src="img/dp.jpg"></a></li> 
+        <li><a href="#"><img src="img/ohc.jpg"></a></li>
+        <li><a href="#"><img src="img/sanbun.jpg"></a></li>
+        <li><a href="#"><img src="img/megamax.jpg"></a></li>
+        <li><a href="#"><img src="img/letsgo.jpg"></a></li> 
+      </ul>
+      <br>
+      <h2>New Episodes <a href="#"><i class="icon-right-open"></i></a></h2>
+      <ul class="four_up tiles">
+        <li class="tooltip">
+        <a href="ginga.html"><img src="img/ug.jpg"></a><br>
+        <strong>Ultraman Ginga</strong><br>
+        <p>A Midsummer Night's Dream</p>
+        </li>
+        <div class="tooltiptext">
+            <h5>Ultraman Ginga</h5>
+             <h6>A Midsummer Night's Dream</h6>
+            While Alien Valky is dancing and teasing the Spark Dolls, Darker Gale approaches him and give Valky a new mission.
+          </div>
+        <li>
+        <a href="#"><img src="img/kyo.jpg"></a><br>
+        <strong>Zyuden Sentai Kyoryuger</strong><br>
+        <p>Gaburincho! Biting Combination</p>
+        </li>
+        <li>
+        <a href="#"><img src="img/hungry.jpg"></a><br>
+        <strong>Hungry!</strong><br>
+        <p>Episode One</p>
+        </li>
+        <li>
+        <a href="#"><img src="img/ouran.jpg"></a><br>
+        <strong>Ouran Host Club</strong><br>
+        <p>The Twins Fight!</p>
+        </li> 
       </ul>
   </div>
 </div>
@@ -218,8 +268,7 @@
              },
              position: {
                   my: 'top left', 
-                  at: 'top right',
-                  target: $('.tooltip') // my target
+                  at: 'top right'
             },
             style: {
                   classes: 'qtip-dark qtip-rounded',
