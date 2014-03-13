@@ -45,7 +45,7 @@ html { font-size: 16px; line-height: 1.625em; }
 
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #5c625e; font-family: "Raleway"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { background: #3d433f; font-family: "Raleway"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -1643,14 +1643,21 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 .modal .btn a { color: white !important; }
 .modal ul { display: inline-block; }
 
-footer { background: #3d433f; font-size: 0.9em; margin: 50px 0 0; }
+#on-now { background: url(../img/group.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+#on-now article { background: rgba(0, 0, 0, 0.8); padding: 15px; margin: 70px 0 0; }
+
+#upcoming { background: #2f3431; padding: 10px 0; }
+
+.info { background: #2f3431; padding: 5px 10px; margin: -10px 0 0; }
+
+footer { background: #2f3431; font-size: 0.9em; margin: 50px 0 0; }
 footer p { font-size: 0.9em; }
 footer ul, footer li { display: inline-block; }
 footer li { padding: 20px 10px 0px 0; }
 
 #now { background: #3d433f; padding: 10px 20px 20px; }
 
-ul li img { border: 3px solid #6a706c; }
+ul li img { border: 3px solid #2f3431; }
 
 .tooltiptext { display: none; }
 

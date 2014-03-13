@@ -44,8 +44,36 @@ $tc-red: #d52f23;
 	}
 }
 
+#on-now {
+	background:url(../img/group.png) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	article {
+		background: rgba(0, 0, 0, 0.8); 
+		padding: 15px;
+		margin: 70px 0 0;
+	}
+}
+
+#upcoming {
+	background:#2f3431;
+	padding: 10px 0;
+}
+
+.info {
+	background: #2f3431;
+	padding: 5px 10px;
+	margin: -10px 0 0;
+}
+
 footer {
-	background:#3d433f;
+	background:#2f3431;
 	font-size: 0.9em;
 	margin: 50px 0 0;
 	p {
@@ -65,7 +93,7 @@ footer {
 }
 
 ul li img {
-	border: 3px solid #6a706c;
+	border: 3px solid #2f3431;
 }
 
 .tooltiptext{
