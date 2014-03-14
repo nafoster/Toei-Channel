@@ -1632,6 +1632,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 
 .navbar { margin: 0 0 50px; }
 .navbar .logo { height: 100%; width: 100%; }
+.navbar .avatar { float: left; border: none; display: inline; }
 
 .modal p { color: #444444; }
 .modal .icon-cancel { color: #444444; font-size: 1.5rem; }
@@ -1647,8 +1648,6 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #on-now article { background: rgba(0, 0, 0, 0.8); padding: 15px; margin: 70px 0 0; }
 
 #upcoming { background: #2f3431; padding: 10px 0; }
-
-.info { background: #2f3431; padding: 5px 10px; margin: -10px 0 0; }
 
 footer { background: #2f3431; font-size: 0.9em; margin: 50px 0 0; }
 footer p { font-size: 0.9em; }
