@@ -1631,8 +1631,9 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
 .navbar { margin: 0 0 50px; }
+@media only screen and (max-width: 767px) { .navbar { margin: 0; } }
 .navbar .logo { height: 100%; width: 100%; }
-.navbar .avatar { float: left; border: none; display: inline; }
+.navbar .active { background: #d52f23; }
 
 .modal p { color: #444444; }
 .modal .icon-cancel { color: #444444; font-size: 1.5rem; }
@@ -1644,14 +1645,18 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 .modal .btn a { color: white !important; }
 .modal ul { display: inline-block; }
 
-#on-now { background: url(../img/group.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+#on-now { background: url(../img/group.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
 #on-now article { background: rgba(0, 0, 0, 0.8); padding: 15px; margin: 70px 0 0; }
+@media only screen and (min-width: 768px) and (max-width: 939px) { #on-now article { margin: 20px 0 0; } }
+@media only screen and (max-width: 767px) { #on-now { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
 
 #upcoming { background: #2f3431; padding: 10px 0; }
 
 footer { background: #2f3431; font-size: 0.9em; margin: 50px 0 0; }
 footer p { font-size: 0.9em; }
+@media only screen and (max-width: 767px) { footer p { float: left !important; } }
 footer ul, footer li { display: inline-block; }
+@media only screen and (max-width: 767px) { footer ul, footer li { float: left !important; } }
 footer li { padding: 20px 10px 0px 0; }
 
 #now { background: #3d433f; padding: 10px 20px 20px; }
@@ -1685,20 +1690,6 @@ ul li img { border: 3px solid #2f3431; }
 
 /* Applied to 'focused' tooltips e.g. most recently displayed/interacted with */
 /* Applied on hover of tooltips i.e. added/removed on mouseenter/mouseleave respectively */
-/* Default tooltip style */
-.qtip-default { border-width: 1px; border-style: solid; border-color: #F1D031; background-color: #FFFFA3; color: #555; }
-
-.qtip-default .qtip-titlebar { background-color: #FFEF93; }
-
-.qtip-default .qtip-icon { border-color: #CCC; background: #F1F1F1; color: #777; }
-
-.qtip-default .qtip-titlebar .qtip-close { border-color: #AAA; color: #111; }
-
-/*! Light tooltip style */
-.qtip-light { background-color: white; border-color: #E2E2E2; color: #454545; }
-
-.qtip-light .qtip-titlebar { background-color: #f1f1f1; }
-
 /*! Dark tooltip style */
 .qtip-dark { background-color: #505050; border-color: #303030; color: #f3f3f3; }
 
@@ -1708,36 +1699,30 @@ ul li img { border: 3px solid #2f3431; }
 
 .qtip-dark .qtip-titlebar .ui-state-hover { border-color: #303030; }
 
-/*! Cream tooltip style */
-.qtip-cream { background-color: #FBF7AA; border-color: #F9E98E; color: #A27D35; }
-
-.qtip-cream .qtip-titlebar { background-color: #F0DE7D; }
-
-.qtip-cream .qtip-close .qtip-icon { background-position: -82px 0; }
-
-/*! Red tooltip style */
-.qtip-red { background-color: #F78B83; border-color: #D95252; color: #912323; }
-
-.qtip-red .qtip-titlebar { background-color: #F06D65; }
-
-.qtip-red .qtip-close .qtip-icon { background-position: -102px 0; }
-
-.qtip-red .qtip-icon { border-color: #D95252; }
-
-.qtip-red .qtip-titlebar .ui-state-hover { border-color: #D95252; }
-
-/*! Green tooltip style */
-.qtip-green { background-color: #CAED9E; border-color: #90D93F; color: #3F6219; }
-
-.qtip-green .qtip-titlebar { background-color: #B0DE78; }
-
-.qtip-green .qtip-close .qtip-icon { background-position: -42px 0; }
-
-/*! Blue tooltip style */
-.qtip-blue { background-color: #E5F6FE; border-color: #ADD9ED; color: #5E99BD; }
-
-.qtip-blue .qtip-titlebar { background-color: #D0E9F5; }
-
-.qtip-blue .qtip-close .qtip-icon { background-position: -2px 0; }
-
 .icon-right-open a { color: white !important; }
+
+@media only screen and (max-width: 767px) { .info { font-size: 0.95em; } }
+@media only screen and (max-width: 767px) { .info p { font-size: 0.95em; } }
+
+@media only screen and (max-width: 767px) { .show-on-all-phones { display: inherit !important; } }
+@media only screen and (max-width: 768px) { .show-on-all-phones { display: inherit !important; } }
+@media only screen and (min-width: 768px) and (max-width: 939px) { .show-on-all-phones { display: none !important; } }
+@media only screen and (min-width: 768px) { .show-on-all-phones { display: none !important; } }
+
+@media only screen and (max-width: 767px) { .hide-after-desktop { display: none !important; } }
+@media only screen and (max-width: 768px) { .hide-after-desktop { display: none !important; } }
+@media only screen and (min-width: 768px) and (max-width: 939px) { .hide-after-desktop { display: inherit !important; } }
+@media only screen and (min-width: 768px) { .hide-after-desktop { display: inherit !important; } }
+
+.date-picking { margin: 0 0 50px; }
+
+.icon-up-dir, .icon-down-dir { font-size: 6em; color: #d52f23; text-align: center; padding: 60px 0 40px; }
+
+.schedule-block { background: #5c625e; padding: 10px 10px 5px; margin: 0 0 20px; }
+.schedule-block img { margin: 5px 20px 0 0; }
+.schedule-block h3 { margin: -5px 0 0; font-size: 1.5em; }
+.schedule-block h4 { font-size: 1.2em; margin: -5px 0 10px; }
+.schedule-block .info-box { background: #3d433f; padding: 15px 10px 10px; margin: -10px 0 0; float: left; text-align: center; }
+.schedule-block .rating { font-size: 2em; }
+.schedule-block .time { font-size: 1.5em; }
+.schedule-block .genre { font-size: 1.2em; }
