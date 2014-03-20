@@ -67,7 +67,7 @@
 
 <div id="upcoming" class="hide-after-desktop">
   <div class="row">
-    <strong>Upcoming</strong>: Kamen Rider W - Episode 3 &emsp; <div class="small primary btn"><a href="#">Remind Me</a></div>
+    <strong>Upcoming</strong>: Kamen Rider W - Episode 3 &emsp; <div class="small primary btn"><a href="#" class="switch" gumby-trigger="#krw">Remind Me</a></div>
   </div>
 </div>
 
@@ -80,61 +80,6 @@
     <h3>Kaizoku Sentai Gokaiger</h3>
     <h4>The Space Pirates Appear</h4>
     <p>A band of space pirates known as the Gokaiger arrive on Earth in pursuit of a legendary treasure tied to the 34 previous Sentai teams of the planet, who had all sacrificed their powers to stop the Zangyack Empire.</p>
-  </div>
-</div>
-
-
-<!-- Sign In Modal -->
-<div class="modal" id="signin">
-  <div class="content">
-    <a class="close switch" gumby-trigger="|#signin"><i class="icon-cancel" /></i></a>
-    <div class="row">
-      <div class="ten columns centered text-center">
-        <h2>Sign In</h2>
-        <p>Sign in below to get access to hundreds of shows, movies, and series with personalized recommendations.</p>
-        <hr>
-         <p>
-         <div class="field">
-              Email Address: <br>
-          <input class="wide email input" name="email" type="email" placeholder="Your Email Address" /><br><br>
-              Password: <br>
-          <input class="wide password input" name="password" type="password" placeholder="Password" /><br><br>
-          <div class="medium primary btn"><a href="custom-home.html">Sign In</a></div>
-        </div></p>
-        <br>
-        <p><a href="custom-home.html"><img src="img/fb-signin.png"></a> <a href="custom-home.html"><img src="img/twitter-signin.png"></a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Sign Up Modal -->
-<div class="modal" id="signup">
-  <div class="content">
-    <a class="close switch" gumby-trigger="|#signup"><i class="icon-cancel" /></i></a>
-    <div class="row">
-      <div class="ten columns centered text-center">
-        <h2>Sign Up</h2>
-        <p>Create an account for access to hundreds of shows, movies, and series with personalized recommendations.</p>
-        <hr>
-         <p>
-         <div class="field">
-         Full Name: <br>
-          <input class="wide input" name="name" type="text" placeholder="Your Full Name" /><br><br>
-              Email Address: <br>
-          <input class="wide email input" name="email" type="email" placeholder="Your Email Address" /><br><br>
-              Password: <br>
-          <input class="wide password input" name="password" type="password" placeholder="Password" /><br><br>
-          Confirm Password: <br>
-          <input class="wide password input" name="password" type="password" placeholder="Reenter Password" /><br><br>
-          <div class="medium primary btn"><a href="custom-home.html">Sign Up</a></div>
-        </div></p>
-        <br>
-        <p><a href="custom-home.html"><img src="img/fb-signin.png"></a> <a href="custom-home.html"><img src="img/twitter-signin.png"></a>
-        </p>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -175,6 +120,25 @@
   </div>
 </div>
 
+<!-- KRW notification modal -->
+<div class="modal" id="krw">
+  <div class="content">
+    <a class="close switch" gumby-trigger="|#krw"><i class="icon-cancel" /></i></a>
+    <div class="row">
+      <div class="ten columns">
+        <h2>Notify Me</h2>
+	    <p><strong>Kamen Rider W</strong><br>
+	    Ep 3: How to Get to Heaven<br>
+	    <em>3:30pm</em><br><br>
+	    A couple who owns a pastry shop arrive to hire Shotaro to follow their daughter Yuko Izumi, who has been acting strange recently. Losing Yuko because of Akiko, Shotaro goes to Watcherman for answers, leading them to Goro Murasame who came from the Million Colosseo and lost everything.</p>
+	    <div class="medium primary btn"><a href="#">Send to Phone</a></div> <div class="medium primary btn"><a href="#">Send to Email</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row">
 	<div class="twelve columns">
 
@@ -184,7 +148,31 @@
     </div>
     <h2>March 17th Schedule</h2>
 
-    <i class="icon-up-dir"></i>
+	<div class="text-center">
+    	<a title="See previous" href="#" id="prev"><i class="icon-up-dir"></i></a>
+    </div>
+
+	<div class="schedule-block row prev-block">
+		    <div class="twelve columns">
+			    <div class="two columns">
+			    	<div class="info-box">
+				    	<span class="rating">G</span><br>
+				    	<span class="time">2:30pm</span><br>
+				    	<span class="genre">Tokusatsu</span>
+			    	</div>
+			    	
+			    </div>
+		    	<div class="four columns">
+		    		<img src="img/ksg-schedule.jpg" alt="Kaizoku Sentai Gokaiger">
+		    	</div>
+		    	<div class="five columns schedule-info">
+			    	<h3>Kaizoku Sentai Gokiager</h3>
+			    	<h4>Ep 47: The Fated Showdown</h4>
+			    	<p>With Basco ta Jolokia in possession of all of their Ranger Keys and the 34 Super Sentai Greater Powers, the Gokaigers must find a way to get all of them back and defeat him once and for all.</p>
+			    	<div class="medium primary btn"><a href="#">Watch Now</a></div>
+		    	</div>
+		    </div>
+	    </div>
 
     <div class="schedule-block row">
 	    <div class="twelve columns">
@@ -203,7 +191,7 @@
 		    	<h3>Kamen Rider W</h3>
 		    	<h4>Ep 3: How to Get to Heaven</h4>
 		    	<p>A couple who owns a pastry shop arrive to hire Shotaro to follow their daughter Yuko Izumi, who has been acting strange recently. Losing Yuko because of Akiko, Shotaro goes to Watcherman for answers, leading them to Goro Murasame who came from the Million Colosseo and lost everything.</p>
-		    	<div class="medium primary btn"><a href="#">Remind Me</a></div>
+		    	<div class="medium primary btn"><a href="#" class="switch" gumby-trigger="#krw">Remind Me</a></div>
 	    	</div>
 	    </div>
     </div>
@@ -219,7 +207,7 @@
 		    	
 		    </div>
 	    	<div class="four columns">
-	    		<img src="img/krw-schedule.jpg" alt="Kamen Rider W">
+	    		<img src="img/gytm-schedule.jpg" alt="Garo: Yami wo Terasu Mono">
 	    	</div>
 	    	<div class="five columns schedule-info">
 		    	<h3>GARO: Yami wo Terasu Mono</h3>
@@ -241,7 +229,7 @@
 		    	
 		    </div>
 	    	<div class="four columns">
-	    		<img src="img/krw-schedule.jpg" alt="Kamen Rider W">
+	    		<img src="img/ug-schedule.jpg" alt="Ultraman Ginga">
 	    	</div>
 	    	<div class="five columns schedule-info">
 		    	<h3>Ultraman Ginga</h3>
@@ -263,7 +251,7 @@
 		    	
 		    </div>
 	    	<div class="four columns">
-	    		<img src="img/krw-schedule.jpg" alt="Kamen Rider W">
+	    		<img src="img/dp-schedule.jpg" alt="Traveler's Dimension Police">
 	    	</div>
 	    	<div class="five columns schedule-info">
 		    	<h3>Traveler's Dimension Police</h3>
@@ -285,7 +273,7 @@
 		    	
 		    </div>
 	    	<div class="four columns">
-	    		<img src="img/krw-schedule.jpg" alt="Kamen Rider W">
+	    		<img src="img/br-schedule.jpg" alt="Battle Royale">
 	    	</div>
 	    	<div class="five columns schedule-info">
 		    	<h3>Battle Royale</h3>
@@ -296,7 +284,31 @@
 	    </div>
     </div>
 
-    <i class="icon-down-dir"></i>
+    <div class="schedule-block row next-block">
+	    <div class="twelve columns">
+		    <div class="two columns">
+		    	<div class="info-box">
+			    	<span class="rating">G</span><br>
+			    	<span class="time">11:30pm</span><br>
+			    	<span class="genre">Anime</span>
+		    	</div>
+		    	
+		    </div>
+	    	<div class="four columns">
+	    		<img src="img/ohc-schedule.jpg" alt="Ouran High School Host Club">
+	    	</div>
+	    	<div class="five columns schedule-info">
+		    	<h3>Ouran High School Host Club</h3>
+		    	<h4>Ep 11: Big Brother is a Prince!</h4>
+		    	<p>Kirimi Nekozawa, younger sister of Umehito Nekozawa, comes searching for her big brother at Ouran Academy and stumbles onto the Host Club, where she mistakes Tamaki for her "handsome princely" brother.</p>
+		    	<div class="medium primary btn"><a href="#">Remind Me</a></div>
+	    	</div>
+	    </div>
+    </div>
+
+	<div class="text-center">
+    	<a title="See next" href="#" id="next"><i class="icon-down-dir"></i></a>
+    </div>
 
     </div>
 </div>
@@ -366,9 +378,9 @@
 	Include gumby.js followed by UI modules followed by gumby.init.js
 	Or concatenate and minify into a single file -->
 	<script gumby-touch="js/libs" src="js/libs/gumby.js"></script>
-	<!-- <script src="js/libs/ui/gumby.retina.js"></script>
+	<!-- <script src="js/libs/ui/gumby.retina.js"></script> -->
 	<script src="js/libs/ui/gumby.toggleswitch.js"></script>
-	<script src="js/libs/ui/gumby.checkbox.js"></script>
+	<!-- <script src="js/libs/ui/gumby.checkbox.js"></script>
 	<script src="js/libs/ui/gumby.radiobtn.js"></script>-->
 	<script src="js/libs/ui/gumby.navbar.js"></script>
 	<!-- <script src="js/libs/ui/jquery.validation.js"></script> -->
@@ -405,6 +417,19 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.datepicker').pickadate();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$( "#prev" ).click(function() {
+			  $( ".prev-block" ).show( "slow");
+			  event.preventDefault();
+			});
+			$( "#next" ).click(function() {
+			  $( ".next-block" ).show( "slow");
+			  event.preventDefault();
+			});
 		});
 	</script>
 

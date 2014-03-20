@@ -1649,6 +1649,9 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #on-now article { background: rgba(0, 0, 0, 0.8); padding: 15px; margin: 70px 0 0; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { #on-now article { margin: 20px 0 0; } }
 @media only screen and (max-width: 767px) { #on-now { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
+#on-now h2 { color: #d52f23; }
+#on-now h3 { font-weight: bold; }
+#on-now h4 { font-size: 1.4em; margin: -5px 0 5px; }
 
 #upcoming { background: #2f3431; padding: 10px 0; }
 
@@ -1719,10 +1722,15 @@ ul li img { border: 3px solid #2f3431; }
 .icon-up-dir, .icon-down-dir { font-size: 6em; color: #d52f23; text-align: center; padding: 60px 0 40px; }
 
 .schedule-block { background: #5c625e; padding: 10px 10px 5px; margin: 0 0 20px; }
+@media only screen and (max-width: 767px) { .schedule-block { text-align: center; background: none; margin: 0 0 50px; } }
 .schedule-block img { margin: 5px 20px 0 0; }
-.schedule-block h3 { margin: -5px 0 0; font-size: 1.5em; }
+.schedule-block h3 { margin: -5px 0 0; font-size: 1.5em; font-weight: bold; }
 .schedule-block h4 { font-size: 1.2em; margin: -5px 0 10px; }
 .schedule-block .info-box { background: #3d433f; padding: 15px 10px 10px; margin: -10px 0 0; float: left; text-align: center; }
-.schedule-block .rating { font-size: 2em; }
-.schedule-block .time { font-size: 1.5em; }
+@media only screen and (max-width: 767px) { .schedule-block .info-box { margin: 0 auto; float: none; text-align: center; } }
+.schedule-block .rating { font-size: 2em; font-weight: bold; }
+.schedule-block .time { font-size: 1.5em; color: #d52f23; }
 .schedule-block .genre { font-size: 1.2em; }
+@media only screen and (max-width: 767px) { .schedule-block p { font-size: 0.9em; padding: 3px 5px; } }
+
+.prev-block, .next-block { display: none; }
