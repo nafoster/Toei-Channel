@@ -1734,3 +1734,16 @@ ul li img { border: 3px solid #2f3431; }
 @media only screen and (max-width: 767px) { .schedule-block p { font-size: 0.9em; padding: 3px 5px; } }
 
 .prev-block, .next-block { display: none; }
+
+hr { border: 1px solid #515853; height: 0px; background: none; }
+
+#toku, #anime, #drama, #other { display: none; }
+#toku h3, #anime h3, #drama h3, #other h3 { font-weight: bold; }
+@media only screen and (max-width: 767px) { #toku h3, #anime h3, #drama h3, #other h3 { font-size: 1.3em; } }
+#toku a, #anime a, #drama a, #other a { color: #d52f23; }
+@media only screen and (max-width: 767px) { #toku p, #anime p, #drama p, #other p { font-size: 0.95em; } }
+
+#default-genre-screen h2, #toku h2, #anime h2, #drama h2, #other h2 { float: left; }
+#default-genre-screen .field, #toku .field, #anime .field, #drama .field, #other .field { float: right; padding: 20px 0 0; }
+#default-genre-screen .field option, #default-genre-screen .field .picker, #default-genre-screen .field select, #toku .field option, #toku .field .picker, #toku .field select, #anime .field option, #anime .field .picker, #anime .field select, #drama .field option, #drama .field .picker, #drama .field select, #other .field option, #other .field .picker, #other .field select { color: #444; }
+#default-genre-screen .field .picker:after, #toku .field .picker:after, #anime .field .picker:after, #drama .field .picker:after, #other .field .picker:after { color: #444; }

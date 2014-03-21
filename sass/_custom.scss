@@ -346,3 +346,45 @@ ul li img {
 .prev-block, .next-block {
 	display: none;
 }
+
+hr {
+	border: 1px solid #515853;
+	height: 0px;
+	background: none;
+}
+
+#toku, #anime, #drama, #other {
+	display: none;
+	h3 {
+		font-weight: bold;
+		@include respond(all-phones) {
+			font-size: 1.3em;
+		}
+	}
+	a {
+		color: $tc-red;
+	}
+	p {
+		@include respond(all-phones) {
+			font-size: 0.95em;
+		}
+	}
+}
+
+#default-genre-screen, #toku, #anime, #drama, #other {
+	h2 {
+		float: left;
+	}
+	.field {
+		float: right;
+		padding: 20px 0 0;
+		option, .picker, select {
+			color: #444;
+		}
+		.picker {
+			&:after {
+				color: #444;
+			}
+		}
+	}
+}
