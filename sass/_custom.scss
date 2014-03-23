@@ -86,10 +86,97 @@ $tc-red: #d52f23;
 	}
 }
 
+#gokaiger-show {
+	background:url(../img/gokaiger-big.jpg) no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	@include respond(all-phones) {
+		background: none;
+		height: auto;
+		overflow-x: visible;
+		overflow-y: visible;
+	}
+	h2 {
+		color: $tc-red;
+	}
+	h3 {
+		font-weight: bold;
+	}
+	h4 {
+		font-size: 1.4em;
+		margin: -5px 0 5px;
+	}
+}
+
+#garo-movie {
+	background:url(../img/garo-big.jpg) no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	@include respond(all-phones) {
+		background: none;
+		height: auto;
+		overflow-x: visible;
+		overflow-y: visible;
+	}
+	h2 {
+		color: $tc-red;
+	}
+	h3 {
+		font-weight: bold;
+	}
+	h4 {
+		font-size: 1.4em;
+		margin: -5px 0 5px;
+	}
+}
+
+#show-desc {
+	p {
+		a {
+			color: $tc-red;
+		}
+	}
+	.info-box {
+		background: #929991;
+		padding: 15px 10px 10px;
+		margin: 5px 20px 0 0;
+		float: left;
+		text-align: center;
+		@include respond(all-phones) {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+	}
+	.rating {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	.time {
+		font-size: 1.5em;
+	}
+	.genre {
+		font-size: 1.2em;
+	}
+}
+
 #upcoming {
 	background:#2f3431;
 	padding: 10px 0;
 }
+
 
 footer {
 	background:#2f3431;

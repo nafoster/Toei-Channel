@@ -1653,6 +1653,25 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #on-now h3 { font-weight: bold; }
 #on-now h4 { font-size: 1.4em; margin: -5px 0 5px; }
 
+#gokaiger-show { background: url(../img/gokaiger-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+@media only screen and (max-width: 767px) { #gokaiger-show { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
+#gokaiger-show h2 { color: #d52f23; }
+#gokaiger-show h3 { font-weight: bold; }
+#gokaiger-show h4 { font-size: 1.4em; margin: -5px 0 5px; }
+
+#garo-movie { background: url(../img/garo-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+@media only screen and (max-width: 767px) { #garo-movie { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
+#garo-movie h2 { color: #d52f23; }
+#garo-movie h3 { font-weight: bold; }
+#garo-movie h4 { font-size: 1.4em; margin: -5px 0 5px; }
+
+#show-desc p a { color: #d52f23; }
+#show-desc .info-box { background: #929991; padding: 15px 10px 10px; margin: 5px 20px 0 0; float: left; text-align: center; }
+@media only screen and (max-width: 767px) { #show-desc .info-box { margin: 0 auto; float: none; text-align: center; } }
+#show-desc .rating { font-size: 2em; font-weight: bold; }
+#show-desc .time { font-size: 1.5em; }
+#show-desc .genre { font-size: 1.2em; }
+
 #upcoming { background: #2f3431; padding: 10px 0; }
 
 footer { background: #2f3431; font-size: 0.9em; margin: 50px 0 0; }
