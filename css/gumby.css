@@ -1653,17 +1653,23 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #on-now h3 { font-weight: bold; }
 #on-now h4 { font-size: 1.4em; margin: -5px 0 5px; }
 
-#gokaiger-show { background: url(../img/gokaiger-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+#gokaiger-show { background: url(../img/gokaiger-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; margin: -50px 0 0; }
 @media only screen and (max-width: 767px) { #gokaiger-show { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
 #gokaiger-show h2 { color: #d52f23; }
 #gokaiger-show h3 { font-weight: bold; }
 #gokaiger-show h4 { font-size: 1.4em; margin: -5px 0 5px; }
+#gokaiger-show .hover { position: relative; margin: 250px auto 0; text-align: center; display: none; }
+#gokaiger-show .hover .icon-play { font-size: 20em; }
+#gokaiger-show .hover .icon-play:hover { color: white; }
 
-#garo-movie { background: url(../img/garo-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+#garo-movie { background: url(../img/garo-big.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; margin: -50px 0 0; }
 @media only screen and (max-width: 767px) { #garo-movie { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
 #garo-movie h2 { color: #d52f23; }
 #garo-movie h3 { font-weight: bold; }
 #garo-movie h4 { font-size: 1.4em; margin: -5px 0 5px; }
+#garo-movie .hover { position: relative; margin: 250px auto 0; text-align: center; display: none; }
+#garo-movie .hover .icon-play { font-size: 20em; }
+#garo-movie .hover .icon-play:hover { color: white; }
 
 #show-desc p a { color: #d52f23; }
 #show-desc .info-box { background: #929991; padding: 15px 10px 10px; margin: 5px 20px 0 0; float: left; text-align: center; }

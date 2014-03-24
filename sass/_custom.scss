@@ -96,6 +96,7 @@ $tc-red: #d52f23;
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	margin: -50px 0 0;
 	@include respond(all-phones) {
 		background: none;
 		height: auto;
@@ -111,6 +112,18 @@ $tc-red: #d52f23;
 	h4 {
 		font-size: 1.4em;
 		margin: -5px 0 5px;
+	}
+	.hover {
+		position: relative;
+		margin: 250px auto 0;
+		text-align: center;
+		display: none;
+			.icon-play {
+				font-size: 20em;
+				&:hover {
+					color: white;
+				}
+			}
 	}
 }
 
@@ -124,6 +137,7 @@ $tc-red: #d52f23;
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	margin: -50px 0 0;
 	@include respond(all-phones) {
 		background: none;
 		height: auto;
@@ -139,6 +153,18 @@ $tc-red: #d52f23;
 	h4 {
 		font-size: 1.4em;
 		margin: -5px 0 5px;
+	}
+	.hover {
+		position: relative;
+		margin: 250px auto 0;
+		text-align: center;
+		display: none;
+			.icon-play {
+				font-size: 20em;
+				&:hover {
+					color: white;
+				}
+			}
 	}
 }
 

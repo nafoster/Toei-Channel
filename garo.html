@@ -29,8 +29,6 @@
 
 <body>
 
-<div class="parallax" id="garo-movie" gumby-parallax="0">
-
 <div class="navbar" id="nav1" gumby-fixed="top">
     <div class="row">
       <h1 class="pull_two four columns logo">
@@ -49,6 +47,12 @@
       </ul>
     </div>
   </div>
+
+  <div class="parallax" id="garo-movie" gumby-parallax="0">
+
+<div class="hover">
+  <a href="#"><i class="icon-play"></i></a>
+</div>
 
 <!-- Search Modal -->
 <div class="modal" id="search">
@@ -84,6 +88,14 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="row show-on-all-phones">
+<br><br><br>
+  <div class="twelve columns">
+    <article class="youtube video">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/EtR-Ve9Fw0A?rel=0" frameborder="0" allowfullscreen></iframe>
+    </article>
   </div>
 </div>
 
@@ -164,6 +176,16 @@
          });
      });
  });
+  </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#garo-movie").mouseenter(function() {
+        $(".hover").show();
+      });
+      $("#garo-movie").mouseleave(function() {
+        $(".hover").hide();
+      });
+    });
   </script>
 	<!--
 	Include gumby.js followed by UI modules followed by gumby.init.js
