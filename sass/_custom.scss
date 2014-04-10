@@ -1,5 +1,7 @@
 // Your custom SCSS should be written here...
 
+/* CUSTOM */
+
 $tc-red: #d52f23;
 
 .navbar {
@@ -56,7 +58,7 @@ $tc-red: #d52f23;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	height: 100%;
+	height: 600px;
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -166,6 +168,9 @@ $tc-red: #d52f23;
 				}
 			}
 	}
+}
+#garo-actual, #gokai-actual {
+	display: none;
 }
 
 #show-desc {

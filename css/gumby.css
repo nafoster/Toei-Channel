@@ -1630,6 +1630,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
+/* CUSTOM */
 .navbar { margin: 0 0 50px; }
 @media only screen and (max-width: 767px) { .navbar { margin: 0; } }
 .navbar .logo { height: 100%; width: 100%; }
@@ -1645,7 +1646,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 .modal .btn a { color: white !important; }
 .modal ul { display: inline-block; }
 
-#on-now { background: url(../img/group.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; width: 100%; overflow-x: hidden; overflow-y: hidden; }
+#on-now { background: url(../img/group.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; width: 100%; overflow-x: hidden; overflow-y: hidden; }
 #on-now article { background: rgba(0, 0, 0, 0.8); padding: 15px; margin: 70px 0 0; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { #on-now article { margin: 20px 0 0; } }
 @media only screen and (max-width: 767px) { #on-now { background: none; height: auto; overflow-x: visible; overflow-y: visible; } }
@@ -1670,6 +1671,8 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #garo-movie .hover { position: relative; margin: 250px auto 0; text-align: center; display: none; }
 #garo-movie .hover .icon-play { font-size: 20em; }
 #garo-movie .hover .icon-play:hover { color: white; }
+
+#garo-actual, #gokai-actual { display: none; }
 
 #show-desc p a { color: #d52f23; }
 #show-desc .info-box { background: #929991; padding: 15px 10px 10px; margin: 5px 20px 0 0; float: left; text-align: center; }
