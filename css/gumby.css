@@ -1672,6 +1672,8 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 #garo-movie .hover .icon-play { font-size: 20em; }
 #garo-movie .hover .icon-play:hover { color: white; }
 
+#garo-actual, #gokai-actual { display: none; }
+
 #show-desc p a { color: #d52f23; }
 #show-desc .info-box { background: #929991; padding: 15px 10px 10px; margin: 5px 20px 0 0; float: left; text-align: center; }
 @media only screen and (max-width: 767px) { #show-desc .info-box { margin: 0 auto; float: none; text-align: center; } }

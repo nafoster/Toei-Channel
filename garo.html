@@ -99,6 +99,10 @@
   </div>
 </div>
 
+  <article class="youtube video parallax" id="garo-actual" gumby-parallax="0">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/EtR-Ve9Fw0A?rel=0" frameborder="0" allowfullscreen></iframe>
+ </article>
+
 <div class="row" id="show-desc">
 <div class="twelve columns">
 
@@ -184,6 +188,11 @@
       });
       $("#garo-movie").mouseleave(function() {
         $(".hover").hide();
+      });
+      $("#garo-movie").on("click", function() {
+        $("#garo-movie").hide();
+        $("#garo-actual").show();
+        event.preventDefault();
       });
     });
   </script>

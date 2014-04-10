@@ -91,6 +91,10 @@
   </div>
 </div>
 
+  <article class="youtube video parallax" id="gokai-actual" gumby-parallax="0">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/VXFDtU6l59o?rel=0" frameborder="0" allowfullscreen></iframe>
+ </article>
+
 <div class="row" id="show-desc">
 <div class="twelve columns">
 
@@ -206,6 +210,11 @@
       });
       $("#gokaiger-show").mouseleave(function() {
         $(".hover").hide();
+      });
+      $("#gokaiger-show").on("click", function() {
+        $("#gokaiger-show").hide();
+        $("#gokai-actual").show();
+        event.preventDefault();
       });
     });
   </script>
