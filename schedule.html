@@ -59,7 +59,11 @@
       <h3>Kaizoku Sentai Gokaiger</h3>
       <h4>The Fated Showdown</h4>
       <p>With Basco ta Jolokia in possession of all of their Ranger Keys and the 34 Super Sentai Greater Powers, the Gokaigers must find a way to get all of them back and defeat him once and for all.</p>
+<<<<<<< HEAD
       <div class="medium primary btn"><a href="#" class="switch" gumby-trigger="#now">Watch Now</a></div>
+=======
+      <div class="medium primary btn"><a class="popup-youtube" href="http://www.youtube.com/watch?v=VXFDtU6l59o">Watch Now</a></div>
+>>>>>>> gh-pages
     </article>
   </section>
   </div>
@@ -120,6 +124,7 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 <!-- Watch Now modal -->
 <div class="modal" id="now">
   <div class="content">
@@ -135,6 +140,8 @@
     </div>
   </div>
 </div>
+=======
+>>>>>>> gh-pages
 
 <!-- KRW notification modal -->
 <div class="modal" id="krw">
@@ -391,6 +398,7 @@
   </script>
 
    <script>
+<<<<<<< HEAD
     $(document).ready(function(){
        $('.modal').bind('hide', function () {
         var iframe = $(this).children('div.modal').find('iframe'); 
@@ -399,6 +407,19 @@
         iframe.attr('src', src);
       });
     });
+=======
+    $(document).ready(function() {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
+>>>>>>> gh-pages
   </script>
 
 	<!--
