@@ -57,7 +57,7 @@
       <h3>Kaizoku Sentai Gokaiger</h3>
       <h4>The Fated Showdown</h4>
       <p>With Basco ta Jolokia in possession of all of their Ranger Keys and the 34 Super Sentai Greater Powers, the Gokaigers must find a way to get all of them back and defeat him once and for all.</p>
-      <div class="medium primary btn"><a href="#" class="switch" gumby-trigger="#now">Watch Now</a></div>
+      <div class="medium primary btn"><a class="popup-youtube" href="http://www.youtube.com/watch?v=VXFDtU6l59o">Watch Now</a></div>
     </article>
   </section>
   </div>
@@ -119,21 +119,6 @@
   </div>
 </div>
 
-<!-- Watch Now modal -->
-<div class="modal" id="now">
-  <div class="content">
-    <a class="close switch" gumby-trigger="|#now"><i class="icon-cancel" /></i></a>
-    <div class="row">
-      <div class="ten columns">
-        <article class="youtube video">
-      <iframe id="gokai" width="560" height="315" src="http://www.youtube.com/embed/VXFDtU6l59o?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-    </article>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="row">
 <div class="twelve columns">
@@ -595,14 +580,17 @@
  });
   </script>
  <script>
-    $(document).ready(function(){
-       $('.modal').bind('hide', function () {
-        var iframe = $(this).children('div.modal').find('iframe'); 
-        var src = iframe.attr('src');
-        iframe.attr('src', '');
-        iframe.attr('src', src);
-      });
+    $(document).ready(function() {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
     });
+});
   </script>
 
   <script type="text/javascript" src="js/genre.js"></script>
